@@ -1,0 +1,45 @@
+#Logs 日志文件
+logs
+.log
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+#Dependencies 依赖目录（体积大，可通过包管理器重装）
+node_modules
+#System Files 系统自动生成文件
+.DS_Store
+#Build Outputs 构建 / 打包产物
+dist
+dist-ssr
+coverage
+#Environment Variables 环境变量文件（含敏感配置 / 本地自定义，Vue3 专用）
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+#Testing & E2E 测试 / 端到端测试相关产物
+/cypress/videos/
+/cypress/screenshots/
+screenshots/
+#Build Tool Cache 构建工具缓存 / 临时文件（Vite+Vue CLI 兼容）
+.tsbuildinfo
+.timestamp--.mjs
+node_modules/.cache/ # Vue CLI 旧版缓存（兼容可能的残留缓存）
+#Lint & Code Check 代码检查缓存
+.eslintcache
+#Editor/IDE Configs 编辑器配置（保留 vscode 扩展推荐，其余过滤）
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+.ntvs
+*.njsproj
+*.sln
+*.sw?
+#Temporary Files 本地临时文件（通用补充）
+temp/
+*.tmp
